@@ -3,13 +3,11 @@
   "type": "object",
   "properties": {
     "album": { "$ref": "album-simple" },
-    "artists": [
-      {
+    "artists": {
         "type": "array",
         "description": "The artists who performed the track. Each artist object includes a link in href to more detailed information about the artist.",
-        "items": { "$ref": "artist-simple" }
-      }
-    ],
+        "items": [{ "$ref": "artist-simple" }]
+    },
     "available_markets": {
       "type": "array",
       "description": "A list of the countries in which the track can be played, identified by their ISO 3166-1 alpha-2 code. ",
@@ -33,20 +31,20 @@
       "type": "object",
       "description": "Known external IDs for the track.",
       "properties": {
-        "": [{
+        "": {
           "type": "string",
           "description": "The identifier type, for example: 'isrc' - International Standard Recording Code, 'ean' - International Article Number, 'upc' - Universal Product Code"
-        }]
+        }
       }
     },
     "external_urls": {
       "type": "object",
       "description": "Known external URLs for this track.",
       "properties": {
-        "": [{
+        "": {
           "type": "string",
           "description": "The type of the URL, for example: 'spotify' - The Spotify URL for the object."
-        }]
+        }
       }
     },
     "href": {
@@ -69,10 +67,10 @@
           "type": "object",
           "description": "Known external URLs for this track.",
           "properties": {
-            "": [{
+            "": {
               "type": "string",
               "description": "The type of the URL, for example: 'spotify' - The Spotify URL for the object."
-            }]
+            }
           }
         },
         "href": {

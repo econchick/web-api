@@ -89,6 +89,32 @@ traits:
           example: 5
           default: 0
           required: false
+schemas:
+  - album: !include schemas/album.json
+  - album-simple: !include schemas/album-simple.json
+  - album-simple-page: !include schemas/album-simple-page.json
+  - album-track-page: !include schemas/album-track-page.json
+  - artist: !include schemas/artist.json
+  - artist-simple: !include schemas/artist-simple.json
+  - category: !include schemas/category.json
+  - category-page: !include schemas/category-page.json
+  - image: !include schemas/image.json
+  - playlist: !include schemas/playlist.json
+  - playlist-simple: !include schemas/playlist-simple.json
+  - playlist-simple-page: !include schemas/playlist-simple-page.json
+  - playlist-snapshot: !include schemas/playlist-snapshot.json
+  - playlist-track: !include schemas/playlist-track.json
+  - playlist-track-page: !include schemas/playlist-track-page.json
+  - track: !include schemas/track.json
+  - track-simple: !include schemas/track-simple.json
+  - track-simple-page: !include schemas/track-simple-page.json
+  - followers: !include schemas/followers.json
+  - user-followed: !include schemas/user-followed.json
+  - user-profile: !include schemas/user-profile.json
+  - current-user-profile: !include schemas/current-user-profile.json
+  - saved-track: !include schemas/saved-track.json
+  - saved-track-page: !include schemas/saved-track-page.json
+  - search: !include schemas/search.json
 /albums:
   displayName: several-albums
   get:
@@ -915,29 +941,3 @@ traits:
                     "description": "True if the user follows the artist/user, false otherwise"
                   }
                 }
-schemas:
-  - album: !include schemas/album.json
-  - album-simple: !include schemas/album-simple.json
-  - album-simple-page: !include schemas/album-simple-page.json
-  - album-track-page: !include schemas/album-track-page.json
-  - artist: !include schemas/artist.json
-  - artist-simple: !include schemas/artist-simple.json
-  - category: !include schemas/category.json
-  - category-page: !include schemas/category-page.json
-  - image: !include schemas/image.json
-  - playlist: !include schemas/playlist.json
-  - playlist-simple: !include schemas/playlist-simple.json
-  - playlist-simple-page: !include schemas/playlist-simple-page.json
-  - playlist-snapshot: !include schemas/playlist-snapshot.json
-  - playlist-track: !include schemas/playlist-track.json
-  - playlist-track-page: !include schemas/playlist-track-page.json
-  - track: !include schemas/track.json
-  - track-simple: !include schemas/track-simple.json
-  - track-simple-page: !include schemas/track-simple-page.json
-  - followers: !include schemas/followers.json
-  - user-followed: !include schemas/user-followed.json
-  - user-profile: !include schemas/user-profile.json
-  - current-user-profile: !include schemas/current-user-profile.json
-  - saved-track: !include schemas/saved-track.json
-  - saved-track-page: !include schemas/saved-track-page.json
-  - search: !include schemas/search.json
